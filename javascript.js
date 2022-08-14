@@ -1,3 +1,5 @@
+// Computer choice: randomly choose from rock, paper, and scissors
+
 function getComputerChoice() {
     let randomNumber = Math.floor(Math.random() * 3);
 
@@ -53,8 +55,12 @@ console.log(computerSelection);
 console.log(playerSelection);
 */
 
+// Initialize scores
+
 let computerScore = 0;
 let playerScore = 0;
+
+// the roundResults variable seems irrelevant; need to figure out what else to return in the playRound function
 
 function playRound(playerSelection, computerSelection) {
     
@@ -117,7 +123,8 @@ function playRound(playerSelection, computerSelection) {
     
 }
 
-// console.log(playRound(playerSelection, computerSelection));
+// Loop the game to play 5 rounds
+// Determine & return the winner
 
 function game() {
     
